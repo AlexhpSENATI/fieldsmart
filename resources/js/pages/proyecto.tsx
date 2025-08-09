@@ -5,8 +5,8 @@ import { Head } from '@inertiajs/react';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Dashboard',
-        href: '/dashboard',
+        title: 'proyecto xd',
+        href: '/proyecto',
     },
 ];
 
@@ -28,7 +28,6 @@ export default function Dashboard() {
                 </div>
                 <div className="relative min-h-[100vh] flex-1 overflow-hidden rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border">
                     <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
-                <h1>hola</h1>
                 </div>
             </div>
         </AppLayout>

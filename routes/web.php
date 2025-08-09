@@ -12,6 +12,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
 });
+//proyecto prueba de redireccion
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('proyecto', function () {
+        return Inertia::render('proyecto');
+    })->name('proyecto');
+});
+
+
+
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
