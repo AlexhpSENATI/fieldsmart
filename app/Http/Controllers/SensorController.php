@@ -3,25 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class SensorController extends Controller
 {
     public function store(Request $request)
     {
-        // Validar datos
-        $request->validate([
-            'temperature' => 'required|numeric',
-            'humidity' => 'required|numeric',
-        ]);
+        Log::info('Datos recibidos del ESP32', $request->all());
 
-        // Responder
-        return response()->json([
-            'success' => true,
-            'message' => 'Datos recibidos correctamente',
-            'data' => [
-                'temperature' => $request->temperature,
-                'humidity' => $request->humidity
-            ]
-        ]);
+        return response()->json(['status' => 'ok']);
     }
 }
