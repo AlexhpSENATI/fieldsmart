@@ -8,13 +8,13 @@ class SensorController extends Controller
 {
     public function store(Request $request)
     {
-        // Validar datos recibidos xd
+        // Validar datos
         $request->validate([
             'temperature' => 'required|numeric',
-            'humidity' => 'required|numeric'
+            'humidity' => 'required|numeric',
         ]);
 
-
+        // Responder
         return response()->json([
             'success' => true,
             'message' => 'Datos recibidos correctamente',
@@ -22,6 +22,6 @@ class SensorController extends Controller
                 'temperature' => $request->temperature,
                 'humidity' => $request->humidity
             ]
-        ], 200);
+        ]);
     }
 }

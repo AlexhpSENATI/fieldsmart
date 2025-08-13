@@ -1,13 +1,11 @@
 <?php
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SensorController;
 
-use Illuminate\Support\Facades\Log;
-
-
-Route::post('/sensores', function (Request $request) {
-Log::info('Datos recibidos:', $request->all());
-  // Para ver los datos en el log
-    return response()->json(['status' => 'ok', 'data' => $request->all()]);
-    
+Route::post('/sensores', [SensorController::class, 'store']);
+Route::post('/sensores', [SensorController::class, 'store']);
+Route::get('/sensores', [SensorController::class, 'index']);
+Route::get('/prueba', function () {
+    return ['mensaje' => 'Ruta funcionando'];
 });
