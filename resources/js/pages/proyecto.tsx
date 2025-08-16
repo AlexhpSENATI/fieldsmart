@@ -90,7 +90,7 @@ export default function Dashboard() {
                                         <td className="p-2 border">Admin</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-2 border">2</td>
+                                        <td className="p-2 border">114</td>
                                         <td className="p-2 border">María López</td>
                                         <td className="p-2 border">Usuario</td>
                                     </tr>
@@ -106,26 +106,15 @@ export default function Dashboard() {
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="bg-neutral-100 dark:bg-neutral-800">
-                                    <th className="p-2 border">Fecha</th>
-                                    <th className="p-2 border">Usuario</th>
-                                    <th className="p-2 border">Acción</th>
-                                    <th className="p-2 border">Estado</th>
-                                </tr>
+                                <tr>
+                                        <td className="p-2 border">114</td>
+                                        <td className="p-2 border">María López</td>
+                                        <td className="p-2 border">Usuario</td>
+                                    </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="p-2 border">2025-08-08</td>
-                                    <td className="p-2 border">Juan Pérez</td>
-                                    <td className="p-2 border">Inicio de sesión</td>
-                                    <td className="p-2 border">Correcto</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2 border">2025-08-08</td>
-                                    <td className="p-2 border">María López</td>
-                                    <td className="p-2 border">Subió archivo</td>
-                                    <td className="p-2 border">Correcto</td>
-                                </tr>
+                                
+                                
                             </tbody>
                         </table>
                     </div>
